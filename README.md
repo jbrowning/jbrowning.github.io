@@ -1,3 +1,3 @@
 # README
 
-Source for tenoctober.com
+Source for jbrowning.org

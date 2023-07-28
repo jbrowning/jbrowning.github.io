@@ -13,6 +13,6 @@ It's been quite a while since I've built a personal site for myself. After a bit
 - [Typeform](https://typeform.com)
 - [Cloudflare Pages](https://pages.cloudflare.com)
 
-This is the first time I've built anything using [Astro](https://astro.build) and am really enjoying the experience so far. This site is of course fully open source so feel free to view, fork, and criticize the code [over here](https://github.com/gotenoctober/gotenoctober.github.io). Thank you to Manuel Ernesto for providing an excellent starting point via the [Astrofy template](https://astro-modern-personal-website.netlify.app), which I've highly modified into what you see now.
+This is the first time I've built anything using [Astro](https://astro.build) and am really enjoying the experience so far. This site is of course fully open source so feel free to view, fork, and criticize the code [over here](https://github.com/jbrowning/jbrowning.github.io). Thank you to Manuel Ernesto for providing an excellent starting point via the [Astrofy template](https://astro-modern-personal-website.netlify.app), which I've highly modified into what you see now.
 
 Finally, if you're looking for help with a development project, [get in touch here](https://bit.ly/contact-jeff) and let's see if we're a good fit to work together.

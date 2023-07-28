@@ -5,7 +5,7 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://tenoctober.com',
+  site: 'https://jbrowning.org',
   experimental: {
     assets: true
   },
