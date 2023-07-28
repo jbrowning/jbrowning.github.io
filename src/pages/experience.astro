@@ -1,0 +1,141 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLine from "../components/TimeLine.astro";
+
+const skills = [
+  "React Native",
+  "Ruby on Rails",
+  "Elixir",
+  "Phoenix Framework",
+  "VueJS / Vuex",
+  "React / Redux",
+  "Typescript / Node.js",
+  "d3",
+  "Slack API",
+  "Stripe API",
+  "AWS",
+  "Google Cloud",
+  "Firebase",
+  "PostgreSQL",
+  "Redis",
+  "Docker / dokku",
+];
+---
+
+<BaseLayout title="Experience" sideBarActiveItemID="experience">
+  <div class="mb-5">
+    <h1 class="w-full">Experience</h1>
+  </div>
+
+  <h2 class="w-full">Skills</h2>
+
+  <div class="mb-5">
+    {
+      skills.map((skill) => (
+        <span class="badge badge-secondary badge-lg mr-1 mb-2">{skill}</span>
+      ))
+    }
+  </div>
+
+  <div class="md:flex">
+    <h2 class="w-full">Work History</h2>
+    <a href="/resume.pdf" class="btn btn-outline btn-primary mb-5" download>
+      Download Resume / CV
+    </a>
+  </div>
+
+  <div class="timeline-container mb-5">
+    <TimeLine
+      title="Groove - Full-stack Developer"
+      subtitle="2021 — 2023"
+      skills={["React Native", "Redux", "Firebase/Google Cloud", "Sanity"]}
+    >
+      As a full-stack developer, I assisted with the development of many
+      features, including real-time text chat and enhancing video calling
+      functionality. I also assisted with the hiring process as we built out the
+      team.
+    </TimeLine>
+    <TimeLine
+      title="Hubstaff - Frontend Architect"
+      subtitle="2018 - 2021"
+      skills={["Ruby on Rails", "Vue.js", "Vuex", "d3"]}
+    >
+      I worked with Hubstaff on a part-time basis to consult on their migration
+      to Vue.js. I established and enforced development standards and helped
+      their existing team get acclimated to the Vue ecosystem. Other work
+      included implementation of new interactive charts and visualizations with
+      Vue and d3 as well as supporting backend work.
+    </TimeLine>
+    <TimeLine
+      title="Yala - CTO"
+      subtitle="2016 - 2021"
+      skills={[
+        "Elixir",
+        "Phoenix Framework",
+        "Vue.js",
+        "PostgreSQL",
+        "Redis",
+        "ffmpeg",
+        "Docker",
+        "AWS",
+      ]}
+    >
+      Yala was a Slack integration and web app for social posting and branded
+      custom image/video composition. I built the initial app from the ground
+      up, hired and managed the development team, and also performed all DevOps
+      work (primarily on AWS). One especially interesting piece of the app was a
+      custom video rendering pipeline of short-lived Docker containers tasked
+      with producing final renderings of combined Lottie animations, live video,
+      and custom content.
+    </TimeLine>
+    <TimeLine
+      title="Pinecone - CTO"
+      subtitle="2014 - 2016"
+      skills={[
+        "Ruby on Rails",
+        "AngularJS",
+        "PostgreSQL",
+        "Redis",
+        "Elasticsearch",
+        "AWS",
+      ]}
+    >
+      Pinecone was a selling and marketing platform for small sellers. It was
+      spun out from Mad Mimi during the GoDaddy acquisition and I was brought on
+      to lead development, stand up a small team, and overall project
+      management. The business eventually pivoted into Yala, outlined above.
+    </TimeLine>
+    <TimeLine
+      title="Mad Mimi - Full-stack Developer and Project Lead"
+      subtitle="2012 — 2014"
+      skills={[
+        "Ruby on Rails",
+        "AngularJS",
+        "PostgreSQL",
+        "Redis",
+        "Elasticsearch",
+        "AWS",
+      ]}
+    >
+      Full-stack development primarily utilizing Ruby on Rails and PrototypeJS.
+      I was initially responsible for creating Mad Mimi's Etsy product
+      integration and later led projects to improve analytics and implement
+      purchase/ checkout features. I voluntarily left Mad Mimi after it was
+      purchased by GoDaddy.
+    </TimeLine>
+    <TimeLine title="Dead-end Corporate Job" subtitle="2008 — 2012">
+      TPS reports, mostly.
+    </TimeLine>
+  </div>
+
+  <h2 class="text-3xl w-full font-bold mb-4">Education</h2>
+
+  <div class="timeline-container">
+    <TimeLine
+      title="Brigham Young University"
+      subtitle="2008: B.S. Information Systems Management"
+    >
+      Go Cougars
+    </TimeLine>
+  </div>
+</BaseLayout>
