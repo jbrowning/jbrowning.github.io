@@ -1,5 +1,5 @@
 ---
-const { title, subtitle } = Astro.props;
+const { title, subtitle, skills } = Astro.props;
 ---
 
 <div class="flex">
@@ -12,6 +12,17 @@ const { title, subtitle } = Astro.props;
   <div class="timeline-description-container bd-grid px-5">
     <h3 class="font-semibold mb-1">{title}</h3>
     <span class="font-light text-sm">{subtitle}</span>
+    {
+      Array.isArray(skills) && (
+        <>
+          <div>
+            {skills.map((skill: string) => (
+              <span class="badge badge-secondary mr-1 mb-1">{skill}</span>
+            ))}
+          </div>
+        </>
+      )
+    }
     <p class="my-2 prose max-w-none">
       <slot />
     </p>
