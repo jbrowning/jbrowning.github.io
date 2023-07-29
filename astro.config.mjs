@@ -3,6 +3,8 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import tailwind from "@astrojs/tailwind";
 
+import preact from "@astrojs/preact";
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://jbrowning.org',
@@ -18,5 +20,6 @@ export default defineConfig({
     tailwind({
       applyBaseStyles: false
     }),
+    preact({ compat: true })
   ]
 });

@@ -1,11 +1,12 @@
 ---
 import { Image } from "astro:assets";
+import Gallery from "../Gallery.jsx";
 
 const thumbnailWidth = 750;
 const thumbnailClass = "max-w-full md:max-w-[13rem]";
 const thumbnailFormat = "png";
 const { project } = Astro.props;
-const { title, description, thumbnail, tags, link } = project;
+const { title, description, thumbnail, tags, link, screenshots } = project;
 const thumbnailAlt = `${title} thumbnail`;
 ---
 
@@ -56,6 +57,7 @@ const thumbnailAlt = `${title} thumbnail`;
       <div class="prose max-w-none">
         <p>{description}</p>
       </div>
+      <Gallery screenshots={screenshots} client:only="preact" />
     </div>
   </div>
 </div>

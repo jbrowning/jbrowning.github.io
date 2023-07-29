@@ -23,6 +23,14 @@ const projectSchema = ({ image }) =>
     thumbnail: image().optional(),
     tags: z.array(z.string()).optional(),
     order: z.number(),
+    screenshots: z
+      .array(
+        z.object({
+          original: z.string(),
+          thumb: z.string(),
+        })
+      )
+      .optional(),
   });
 
 const projectsCollection = defineCollection({
