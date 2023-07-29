@@ -1,5 +1,6 @@
 import LightGallery from "lightgallery/react";
 import lgThumbnail from "lightgallery/plugins/thumbnail";
+import { LIGHTGALLERY_LICENSE_KEY } from "./config";
 
 const Gallery = ({ screenshots }) => {
   if (!screenshots) {
@@ -8,6 +9,7 @@ const Gallery = ({ screenshots }) => {
 
   return (
     <LightGallery
+      licenseKey={LIGHTGALLERY_LICENSE_KEY}
       plugins={[lgThumbnail]}
       elementClassNames="flex gap-5 my-2"
       download={false}
