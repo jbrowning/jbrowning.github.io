@@ -11,4 +11,11 @@ tags:
   - Redis
   - Elasticsearch
   - AWS
+screenshots:
+  - original: /images/work/pinecone-1.jpg
+    thumb: /images/work/pinecone-1-thumb.jpg
+  - original: /images/work/pinecone-2.jpg
+    thumb: /images/work/pinecone-2-thumb.jpg
+  - original: /images/work/pinecone-3.jpg
+    thumb: /images/work/pinecone-3-thumb.jpg
 ---
