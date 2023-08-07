@@ -6,7 +6,8 @@ const thumbnailWidth = 750;
 const thumbnailClass = "max-w-full md:max-w-[13rem]";
 const thumbnailFormat = "png";
 const { project } = Astro.props;
-const { title, description, thumbnail, tags, link, screenshots } = project;
+const { title, description, thumbnail, tags, link, screenshots } = project.data;
+const { Content } = await project.render();
 const thumbnailAlt = `${title} thumbnail`;
 ---
 
@@ -50,12 +51,13 @@ const thumbnailAlt = `${title} thumbnail`;
         {
           tags &&
             tags.map((tag: string) => (
-              <span class="badge badge-secondary mr-1 mb-1">{tag}</span>
+              <span class="badge badge-outline mr-1 mb-1">{tag}</span>
             ))
         }
       </div>
-      <div class="prose max-w-none">
-        <p>{description}</p>
+      <div class="prose max-w-none mb-6">
+        {description && <p>{description}</p>}
+        <Content />
       </div>
       <Gallery screenshots={screenshots} client:only="preact" />
     </div>

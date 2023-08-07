@@ -1,6 +1,5 @@
 ---
 title: Pinecone (RIP 💀)
-description: I was CTO and led implementation of a web app for simple and intuitive single-page product purchasing.
 thumbnail: ./pinecone/thumbnail.png
 order: 3
 tags:
@@ -19,3 +18,5 @@ screenshots:
   - original: /images/work/pinecone-3.jpg
     thumb: /images/work/pinecone-3-thumb.jpg
 ---
+
+Pinecone was a single-page checkout system for small sellers and was spun out from Mad Mimi during the GoDaddy acquisition. I was brought on as CTO to lead development and stand up a small development team. The business eventually pivoted into Yala, outlined above.
