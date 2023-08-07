@@ -16,7 +16,7 @@ const projects = (await getCollection("projects")).sort(
     {
       projects.map((project, index) => (
         <>
-          <ProjectCard project={project.data} />
+          <ProjectCard project={project} />
           {index !== projects.length - 1 && <div class="divider my-0" />}
         </>
       ))

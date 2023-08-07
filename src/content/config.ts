@@ -18,7 +18,7 @@ const blogCollection = defineCollection({
 const projectSchema = ({ image }) =>
   z.object({
     title: z.string(),
-    description: z.string(),
+    description: z.string().optional(),
     link: z.string().url().optional(),
     thumbnail: image().optional(),
     tags: z.array(z.string()).optional(),
