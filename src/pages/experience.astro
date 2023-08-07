@@ -32,7 +32,7 @@ const skills = [
   <div class="mb-5">
     {
       skills.map((skill) => (
-        <span class="badge badge-secondary badge-lg mr-1 mb-2">{skill}</span>
+        <span class="badge badge-outline badge-lg mr-1 mb-2">{skill}</span>
       ))
     }
   </div>
@@ -47,28 +47,36 @@ const skills = [
   <div class="timeline-container mb-5">
     <TimeLine
       title="Groove - Full-stack Developer"
-      subtitle="2021 — 2023"
+      subtitle="Nov 2021 — Jun 2023"
       skills={["React Native", "Redux", "Firebase/Google Cloud", "Sanity"]}
     >
-      As a full-stack developer, I assisted with the development of many
-      features, including real-time text chat and enhancing video calling
-      functionality. I also assisted with the hiring process as we built out the
-      team.
+      <ul>
+        <li class="mt-0">
+          Implemented and improved many features including real-time chat,
+          search, task management, and video calling
+        </li>
+        <li>Assisted with architectural decisions</li>
+        <li>
+          Assisted with the screening process as we built out the dev team
+        </li>
+      </ul>
     </TimeLine>
     <TimeLine
-      title="Hubstaff - Frontend Architect"
-      subtitle="2018 - 2021"
+      title="Hubstaff - Frontend Architect (part-time)"
+      subtitle="Mar 2018 - Nov 2021"
       skills={["Ruby on Rails", "Vue.js", "Vuex", "d3"]}
     >
-      I worked with Hubstaff on a part-time basis to consult on their migration
-      to Vue.js. I established and enforced development standards and helped
-      their existing team get acclimated to the Vue ecosystem. Other work
-      included implementation of new interactive charts and visualizations with
-      Vue and d3 as well as supporting backend work.
+      <ul>
+        <li>Led the organization's migration from jQuery to Vue.js</li>
+        <li>
+          Established, documented, and enforced Vue.js/Vuex coding standards
+        </li>
+        <li>Implemented new interactive charts and visualizations</li>
+      </ul>
     </TimeLine>
     <TimeLine
       title="Yala - CTO"
-      subtitle="2016 - 2021"
+      subtitle="Jun 2016 - Nov 2021"
       skills={[
         "Elixir",
         "Phoenix Framework",
@@ -80,17 +88,31 @@ const skills = [
         "AWS",
       ]}
     >
-      Yala was a Slack integration and web app for social posting and branded
-      custom image/video composition. I built the initial app from the ground
-      up, hired and managed the development team, and also performed all DevOps
-      work (primarily on AWS). One especially interesting piece of the app was a
-      custom video rendering pipeline of short-lived Docker containers tasked
-      with producing final renderings of combined Lottie animations, live video,
-      and custom content.
+      <ul>
+        <li>
+          Built the initial app from scratch to production-grade MVP in 6 months
+        </li>
+        <li>
+          Scaled up the development team to a total of 5 &mdash; leveled up
+          reports on Elixir and functional programming best practices
+        </li>
+        <li>
+          Devised an algorithm to automatically schedule social posts based on
+          engagement performance
+        </li>
+        <li>
+          Developed an in-browser composer for images and stop-motion videos
+        </li>
+        <li>
+          Implemented distributed pipelines for final rendering of custom images
+          and videos
+        </li>
+        <li>Performed all DevOps responsibilities on AWS</li>
+      </ul>
     </TimeLine>
     <TimeLine
       title="Pinecone - CTO"
-      subtitle="2014 - 2016"
+      subtitle="Jun 2014 - Jul 2016"
       skills={[
         "Ruby on Rails",
         "AngularJS",
@@ -100,14 +122,22 @@ const skills = [
         "AWS",
       ]}
     >
-      Pinecone was a selling and marketing platform for small sellers. It was
-      spun out from Mad Mimi during the GoDaddy acquisition and I was brought on
-      to lead development, stand up a small team, and overall project
-      management. The business eventually pivoted into Yala, outlined above.
+      <ul>
+        <li>
+          Led development and enforced proper code quality and test coverage
+        </li>
+        <li>
+          Implemented marketplace payment system with the Balanced Payments and
+          Stripe Connect APIs
+        </li>
+        <li>Co-founded the angular-foundation project</li>
+        <li>Performed all DevOps responsibilities on AWS</li>
+        <li>Assisted with pivoting the business to Yala (see above)</li>
+      </ul>
     </TimeLine>
     <TimeLine
       title="Mad Mimi - Full-stack Developer and Project Lead"
-      subtitle="2012 — 2014"
+      subtitle="Sep 2012 — Aug 2014"
       skills={[
         "Ruby on Rails",
         "AngularJS",
@@ -117,14 +147,21 @@ const skills = [
         "AWS",
       ]}
     >
-      Full-stack development primarily utilizing Ruby on Rails and PrototypeJS.
-      I was initially responsible for creating Mad Mimi's Etsy product
-      integration and later led projects to improve analytics and implement
-      purchase/ checkout features. I voluntarily left Mad Mimi after it was
-      purchased by GoDaddy.
+      <ul>
+        <li>Created Mad Mimi's Etsy integration</li>
+        <li>
+          Led projects to improve analytics and implement e-commerce features
+        </li>
+        <li>
+          Led the spinoff of what would become Pinecone (see above) during the
+          GoDaddy acquisition
+        </li>
+      </ul>
     </TimeLine>
-    <TimeLine title="Dead-end Corporate Job" subtitle="2008 — 2012">
-      TPS reports, mostly.
+    <TimeLine title="Dead-end Corporate Job" subtitle="May 2008 — Sep 2012">
+      <ul>
+        <li>TPS reports, mostly.</li>
+      </ul>
     </TimeLine>
   </div>
 

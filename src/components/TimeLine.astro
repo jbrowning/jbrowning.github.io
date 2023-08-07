@@ -4,27 +4,27 @@ const { title, subtitle, skills } = Astro.props;
 
 <div class="flex">
   <div class="timeline-line-container">
-    <span class="w-4 h-4 bg-primary block rounded-full mt-1"></span>
+    <span class="w-4 h-4 bg-primary block rounded-full mt-2"></span>
     <span
       class="timeline-line bg-primary block h-full w-[2px] translate-x-[7px]"
     ></span>
   </div>
   <div class="timeline-description-container bd-grid px-5">
-    <h3 class="font-semibold mb-1">{title}</h3>
-    <span class="font-light text-sm">{subtitle}</span>
+    <h3 class="font-semibold mb-0">{title}</h3>
+    <p class="font-light text-sm mb-2">{subtitle}</p>
     {
       Array.isArray(skills) && (
         <>
           <div>
             {skills.map((skill: string) => (
-              <span class="badge badge-secondary mr-1 mb-1">{skill}</span>
+              <span class="badge badge-outline mr-1 mb-1">{skill}</span>
             ))}
           </div>
         </>
       )
     }
-    <p class="mt-2 mb-4 prose max-w-none">
+    <div class="mt-2 mb-4 prose">
       <slot />
-    </p>
+    </div>
   </div>
 </div>
