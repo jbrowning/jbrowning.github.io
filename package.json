@@ -20,16 +20,16 @@
     "@astrojs/tailwind": "^5.1.2",
     "astro": "^4.16.6",
     "daisyui": "^3.2.1",
-    "dayjs": "^1.11.9",
+    "dayjs": "^1.11.13",
     "lightgallery": "^2.7.1",
     "markdown-it": "^13.0.1",
-    "preact": "^10.16.0",
+    "preact": "^10.24.3",
     "sanitize-html": "^2.11.0",
     "semver": "^6.3.1",
-    "sharp": "^0.32.2"
+    "sharp": "^0.33.5"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.9"
+    "@tailwindcss/typography": "^0.5.15"
   },
   "overrides": {
     "react": "npm:@preact/compat@latest",
