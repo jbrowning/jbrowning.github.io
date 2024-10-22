@@ -8,9 +8,6 @@ import preact from "@astrojs/preact";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://jbrowning.org',
-  experimental: {
-    assets: true
-  },
   image: {
     service: sharpImageService()
   },
