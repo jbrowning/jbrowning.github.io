@@ -18,15 +18,17 @@
     "@astrojs/rss": "^4.0.11",
     "@astrojs/sitemap": "^3.2.1",
     "@astrojs/tailwind": "^6.0.0",
+    "@tailwindcss/vite": "^4.0.8",
     "astro": "^5.3.0",
-    "daisyui": "^3.2.1",
+    "daisyui": "5.0.0-beta.8",
     "dayjs": "^1.11.13",
     "lightgallery": "^2.7.1",
     "markdown-it": "^13.0.1",
     "preact": "^10.26.2",
     "sanitize-html": "^2.11.0",
     "semver": "^6.3.1",
-    "sharp": "^0.33.5"
+    "sharp": "^0.33.5",
+    "tailwindcss": "^4.0.8"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.15",
