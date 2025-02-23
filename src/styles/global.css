@@ -41,7 +41,7 @@
 }
 
 h1 {
-  @apply text-5xl font-bold mb-5;
+  @apply text-4xl font-bold mb-5;
 }
 
 h2 {
@@ -54,4 +54,12 @@ h3 {
 
 .timeline-container > div:last-child .timeline-line-container > .timeline-line {
   display: none;
+}
+
+/* Typography Overrides */
+:where(code):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+  &::before,
+  &::after {
+    content: "";
+  }
 }

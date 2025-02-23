@@ -3,7 +3,7 @@ title: Bugs and issues to be aware of when upgrading to React Native 0.71+
 pubDate: 2023-07-21T14:00:00Z
 ---
 
-One of my projects for [Groove](https://groove.ooo) was to upgrade React Native and all dependencies to their latest versions. In our case we were upgrading from React Native ` 0.67.x` to `0.71` and like most projects of this nature that presented quite a few unexpected gotchas along the way. Here I'll outline some that may be most relevant to other projects, including a few React Native bugs that are still unresolved as of this writing.
+One of my projects for [Groove](https://groove.ooo) was to upgrade React Native and all dependencies to their latest versions. In our case we were upgrading from React Native `0.67.x` to `0.71` and like most projects of this nature that presented quite a few unexpected gotchas along the way. Here I'll outline some that may be most relevant to other projects, including a few React Native bugs that are still unresolved as of this writing.
 
 ### Android: Poor performance when scrolling an inverted VirtualizedList (FlatList, SectionList, etc.)
 
