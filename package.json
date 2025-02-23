@@ -12,24 +12,25 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^3.1.8",
-    "@astrojs/preact": "^3.5.3",
-    "@astrojs/react": "^3.6.2",
-    "@astrojs/rss": "^4.0.9",
+    "@astrojs/mdx": "^4.0.8",
+    "@astrojs/preact": "^4.0.4",
+    "@astrojs/react": "^4.2.0",
+    "@astrojs/rss": "^4.0.11",
     "@astrojs/sitemap": "^3.2.1",
-    "@astrojs/tailwind": "^5.1.2",
-    "astro": "^4.16.6",
+    "@astrojs/tailwind": "^6.0.0",
+    "astro": "^5.3.0",
     "daisyui": "^3.2.1",
     "dayjs": "^1.11.13",
     "lightgallery": "^2.7.1",
     "markdown-it": "^13.0.1",
-    "preact": "^10.24.3",
+    "preact": "^10.26.2",
     "sanitize-html": "^2.11.0",
     "semver": "^6.3.1",
     "sharp": "^0.33.5"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.15"
+    "@tailwindcss/typography": "^0.5.15",
+    "typescript": "^5.7.3"
   },
   "overrides": {
     "react": "npm:@preact/compat@latest",
