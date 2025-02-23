@@ -1,21 +1,65 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@plugin '@tailwindcss/typography';
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+  name: "cupcake";
+  default: true;
+  --color-base-100: "#faf7f5";
+  --color-primary: "#ff5200";
+  --color-primary-focus: "#ff5200";
+  --color-secondary: "#d75050";
+  --color-accent: "#d59b6c";
+  --color-neutral: "#836b5d";
+  --color-info: "#42aebd";
+  --color-success: "#489380";
+  --color-warning: "#eb8014";
+  --color-error: "#e01a2e";
+  --color-primary-content: rgba(255, 255, 255, 0.9);
+  --color-success-content: rgba(255, 255, 255, 0.9);
+  --color-accent-content: #5e3e24;
+  --radius-field: 10px;
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
 
 @layer base {
-  h1 {
-    @apply text-5xl font-bold mb-5;
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
   }
+}
 
-  h2 {
-    @apply text-3xl font-bold mb-4;
-  }
+h1 {
+  @apply text-4xl font-bold mb-5;
+}
 
-  h3 {
-    @apply text-2xl font-bold mb-2;
-  }
+h2 {
+  @apply text-3xl font-bold mb-4;
+}
+
+h3 {
+  @apply text-2xl font-bold mb-2;
 }
 
 .timeline-container > div:last-child .timeline-line-container > .timeline-line {
   display: none;
+}
+
+/* Typography Overrides */
+:where(code):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+  &::before,
+  &::after {
+    content: "";
+  }
 }
