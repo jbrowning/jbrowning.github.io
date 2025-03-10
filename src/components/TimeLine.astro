@@ -1,5 +1,7 @@
 ---
-const { title, subtitle, skills } = Astro.props;
+import ExternalLinkIcon from "./ExternalLinkIcon.astro";
+
+const { title, subtitle, skills, url } = Astro.props;
 ---
 
 <div class="flex">
@@ -10,7 +12,20 @@ const { title, subtitle, skills } = Astro.props;
     ></span>
   </div>
   <div class="timeline-description-container bd-grid px-5">
-    <h3 class="font-semibold mb-0">{title}</h3>
+    <h3 class="font-semibold mb-0">
+      {
+        url ? (
+          <a href={url} target="_blank">
+            {title}
+            <span class="inline-block ml-1">
+              <ExternalLinkIcon size={18} />
+            </span>
+          </a>
+        ) : (
+          title
+        )
+      }
+    </h3>
     <p class="font-light text-sm mb-2">{subtitle}</p>
     {
       Array.isArray(skills) && (
