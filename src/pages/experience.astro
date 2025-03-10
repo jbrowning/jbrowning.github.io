@@ -3,6 +3,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import TimeLine from "../components/TimeLine.astro";
 
 const skills = [
+  "GenAI",
+  "Python",
+  "Django",
   "React Native",
   "Ruby on Rails",
   "Elixir",
@@ -32,7 +35,7 @@ const skills = [
   <div class="mb-5">
     {
       skills.map((skill) => (
-        <span class="badge badge-outline badge-lg mr-1 mb-2">{skill}</span>
+        <span class="badge badge-outline mr-1 mb-2">{skill}</span>
       ))
     }
   </div>
@@ -46,9 +49,35 @@ const skills = [
 
   <div class="timeline-container mb-5">
     <TimeLine
+      title="Craft - Principal Developer"
+      subtitle="Sep 2023 — Present"
+      skills={[
+        "OpenAI",
+        "Anthropic",
+        "React Native",
+        "Python",
+        "Django",
+        "Firebase/Google Cloud",
+        "AWS",
+      ]}
+      url="https://heycraft.com"
+    >
+      <ul>
+        <li class="mt-0">
+          Architect and lead of development for Craft, a AI-first platform for
+          deal execution
+        </li>
+        <li>
+          Collaborate with fellow members of the leadership team to develop and
+          execute GTM and product strategy
+        </li>
+      </ul>
+    </TimeLine>
+    <TimeLine
       title="Groove - Full-stack Developer"
       subtitle="Nov 2021 — Jun 2023"
       skills={["React Native", "Redux", "Firebase/Google Cloud", "Sanity"]}
+      url="https://www.groove.ooo/"
     >
       <ul>
         <li class="mt-0">
@@ -62,9 +91,10 @@ const skills = [
       </ul>
     </TimeLine>
     <TimeLine
-      title="Hubstaff - Frontend Architect (part-time)"
+      title="Hubstaff - Frontend Architect"
       subtitle="Mar 2018 - Nov 2021"
       skills={["Ruby on Rails", "Vue.js", "Vuex", "d3"]}
+      url="https://hubstaff.com/"
     >
       <ul>
         <li>Led the organization's migration from jQuery to Vue.js</li>
